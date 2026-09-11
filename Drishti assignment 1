@@ -1,0 +1,88 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "9929f748-c6ba-48d3-9b73-dc9ded49a5b0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Final Student Records:\n",
+      "Roll Number:  101\n",
+      "Name:  Drishti\n",
+      "Branch:  CSE\n",
+      "Marks:  80\n",
+      "\n",
+      "Roll Number:  103\n",
+      "Name:  Aarsh\n",
+      "Branch:  AI\n",
+      "Marks:  98\n",
+      "\n",
+      "Roll Number:  104\n",
+      "Name:  Chhand\n",
+      "Branch:  CSE\n",
+      "Marks:  85\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "students = {\n",
+    "    101: (\"Drishti\", \"CSE\", 80),\n",
+    "    102: (\"Nishita\", \"AI\", 90),\n",
+    "    103: (\"Ojas\", \"DS\", 95)\n",
+    "}\n",
+    "roll_no=[101,102,103]\n",
+    "\n",
+    "students[104] = (\"Chhand\", \"CSE\", 85)\n",
+    "roll_no.append(104)\n",
+    "\n",
+    "del students[102]\n",
+    "roll_no.remove(102)\n",
+    "\n",
+    "students[103]=(\"Aarsh\", \"AI\", 98)\n",
+    "\n",
+    "print(\"Final Student Records:\")\n",
+    "\n",
+    "for roll_no,i in students.items():\n",
+    "    print(\"Roll Number: \",roll_no)\n",
+    "    print(\"Name: \",i[0])\n",
+    "    print(\"Branch: \",i[1])\n",
+    "    print(\"Marks: \",i[2])\n",
+    "    print()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6bae08e0-9fd4-4f3b-ac5f-c18ef5ea279f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
