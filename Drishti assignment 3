@@ -1,0 +1,75 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "e2fa5465-bb54-474c-8a93-b85381ad6121",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter first side:  4\n",
+      "Enter second side:  5\n",
+      "Enter third side:  6\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Not a right-angled triangle\n"
+     ]
+    }
+   ],
+   "source": [
+    "def check_right_triangle(a, b, c):\n",
+    "    if a*a + b*b == c*c:\n",
+    "        print(\"Right-angled triangle\")\n",
+    "    elif a*a + c*c == b*b:\n",
+    "        print(\"Right-angled triangle\")\n",
+    "    elif b*b + c*c == a*a:\n",
+    "        print(\"Right-angled triangle\")\n",
+    "    else:\n",
+    "        print(\"Not a right-angled triangle\")\n",
+    "\n",
+    "\n",
+    "a = int(input(\"Enter first side: \"))\n",
+    "b = int(input(\"Enter second side: \"))\n",
+    "c = int(input(\"Enter third side: \"))\n",
+    "\n",
+    "check_right_triangle(a, b, c)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "525ab769-5029-4747-9726-67991bd88aa8",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
